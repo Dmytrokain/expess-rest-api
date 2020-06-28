@@ -1,9 +1,8 @@
-module.exports = (sequelize, type) => sequelize.define('teacher', {
+module.exports = (sequelize, type) => sequelize.define('group', {
   id: {
     type: type.INTEGER,
     primaryKey: true,
     autoIncrement: true,
   },
   name: type.STRING,
-  surname: type.STRING,
 });
