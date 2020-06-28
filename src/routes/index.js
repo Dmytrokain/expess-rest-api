@@ -1,6 +1,7 @@
-const routes = require('express').Router();
-const subjects = require('./subjects');
+const router = require('express').Router();
 
-routes.use('/subjects', subjects);
+router.get('/', (req, res) => {
+  res.redirect('/subjects');
+});
 
-module.exports = routes;
+module.exports = router;
